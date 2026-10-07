@@ -1,5 +1,24 @@
 // UP Center — концепт главной: шапка, меню, фильтр вузов, форма.
 
+// Видео YouTube: превью из ролика, плеер грузится по клику
+const video = document.querySelector('.video');
+const ytId = video.dataset.youtubeId;
+if (ytId) {
+  const thumb = video.querySelector('.video__thumb');
+  thumb.src = `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`;
+  thumb.hidden = false;
+}
+video.querySelector('.video__play').addEventListener('click', () => {
+  if (!ytId) return;
+  const iframe = document.createElement('iframe');
+  iframe.src = `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0`;
+  iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  iframe.allowFullscreen = true;
+  iframe.title = 'UP Center haqida video';
+  video.appendChild(iframe);
+  video.classList.add('is-playing');
+});
+
 // Шапка уменьшается при прокрутке
 const header = document.getElementById('header');
 const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
