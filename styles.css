@@ -134,6 +134,7 @@ p { margin: 0 0 16px; }
   background: var(--accent-soft); color: var(--accent); flex-shrink: 0;
 }
 .icon-btn svg { width: 20px; height: 20px; fill: currentColor; }
+.icon-btn--tg svg { width: 18px; height: 18px; }
 .icon-btn:hover { background: var(--accent); color: #fff; }
 .icon-btn--phone, .burger { display: none; }
 
