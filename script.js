@@ -5,7 +5,7 @@ const video = document.querySelector('.video');
 const ytId = video.dataset.youtubeId;
 if (ytId) {
   const thumb = video.querySelector('.video__thumb');
-  thumb.src = `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`;
+  thumb.src = `https://i.ytimg.com/vi/${ytId}/sddefault.jpg`;
   thumb.hidden = false;
 }
 video.querySelector('.video__play').addEventListener('click', () => {
@@ -18,6 +18,18 @@ video.querySelector('.video__play').addEventListener('click', () => {
   video.appendChild(iframe);
   video.classList.add('is-playing');
 });
+
+// Галерея «Biz kimmiz?»: стрелки и счётчик
+const gallery = document.querySelector('.gallery');
+const track = gallery.querySelector('.gallery__track');
+const slides = track.children.length;
+const current = () => Math.round(track.scrollLeft / track.clientWidth);
+const go = i => track.scrollTo({ left: ((i + slides) % slides) * track.clientWidth });
+gallery.querySelector('.gallery__btn--prev').addEventListener('click', () => go(current() - 1));
+gallery.querySelector('.gallery__btn--next').addEventListener('click', () => go(current() + 1));
+track.addEventListener('scroll', () => {
+  gallery.querySelector('.gallery__count b').textContent = current() + 1;
+}, { passive: true });
 
 // Шапка уменьшается при прокрутке
 const header = document.getElementById('header');

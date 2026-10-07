@@ -109,11 +109,11 @@
     </div>
 
     <div class="hero__media" id="video">
-      <!-- Вставьте ID ролика YouTube в data-youtube-id (из ссылки youtube.com/watch?v=ID) -->
-      <div class="video" data-youtube-id="">
+      <!-- Ролик с up-center.ru: youtube.com/watch?v=o65ti6Aes6I -->
+      <div class="video" data-youtube-id="o65ti6Aes6I">
         <img class="video__thumb" alt="" hidden>
         <button class="video__play" aria-label="Videoni ishga tushirish"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
-        <span class="video__time">Markaz haqida · 3 daqiqa</span>
+        <span class="video__time">Videoni ko‘ring</span>
       </div>
     </div>
   </div>
@@ -164,7 +164,25 @@
       <p>Biz hujjatlarni tayyorlaymiz, imtihonlarga tayyorlaymiz va Rossiyaga kelganingizdan keyin ham yoningizda bo‘lamiz.</p>
       <a href="#ariza" class="btn btn--primary">So‘rovnoma yuborish</a>
     </div>
-    <div class="split__media ph ph--tall"><span class="ph-label">Foto: jamoa yoki ofis</span></div>
+    <div class="split__media gallery" aria-roledescription="carousel" aria-label="UP Center fotosuratlari">
+      <div class="gallery__track">
+        <img src="img/about/about-01.jpg" alt="UP Center ofisi" width="1200" height="900">
+        <img src="img/about/about-02.jpg" alt="Talabalar Moskva universiteti oldida" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-03.jpg" alt="UP Center jamoasi ko‘rgazmada" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-04.jpg" alt="Talabalar bilan umumiy surat" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-05.jpg" alt="Rus tili darsi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-06.jpg" alt="UP Center ofisi: qabul zonasi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-07.jpg" alt="O‘quv xonasi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-08.jpg" alt="UP Center ofisi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-09.jpg" alt="UP Center ofisi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-10.jpg" alt="Talabalar bilan uchrashuv" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-11.jpg" alt="Rus tili darsi" loading="lazy" width="1200" height="900">
+        <img src="img/about/about-12.jpg" alt="Maslahatchilar talabalar bilan" loading="lazy" width="1200" height="900">
+      </div>
+      <button class="gallery__btn gallery__btn--prev" aria-label="Oldingi surat"><svg viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4 1.4-1.4-6-6 6-6z"/></svg></button>
+      <button class="gallery__btn gallery__btn--next" aria-label="Keyingi surat"><svg viewBox="0 0 24 24"><path d="M8.6 4.6 16 12l-7.4 7.4-1.4-1.4 6-6-6-6z"/></svg></button>
+      <span class="gallery__count"><b>1</b> / 12</span>
+    </div>
   </div>
 </section>
 
@@ -193,7 +211,7 @@
 
     <div class="unis">
       <article class="uni" data-tags="tibbiyot" data-city="msk">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/sechenov.jpg" alt="Sechenov nomidagi PMGMU" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>Sechenov nomidagi PMGMU</h3>
           <p class="uni__meta">Moskva · 1758-yil</p>
@@ -202,7 +220,7 @@
         </div>
       </article>
       <article class="uni" data-tags="tibbiyot" data-city="spb">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/pavlov.jpg" alt="Pavlov nomidagi PSPbGMU" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>Pavlov nomidagi PSPbGMU</h3>
           <p class="uni__meta">Sankt-Peterburg · 1897-yil</p>
@@ -211,7 +229,7 @@
         </div>
       </article>
       <article class="uni" data-tags="transport" data-city="msk">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/rut-miit.jpg" alt="RUT (MIIT)" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>RUT (MIIT)</h3>
           <p class="uni__meta">Moskva · 1896-yil</p>
@@ -220,7 +238,7 @@
         </div>
       </article>
       <article class="uni" data-tags="transport muhandislik" data-city="msk">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/madi.jpg" alt="MADI" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>MADI</h3>
           <p class="uni__meta">Moskva · 1930-yil</p>
@@ -229,7 +247,7 @@
         </div>
       </article>
       <article class="uni" data-tags="transport muhandislik" data-city="spb">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/pgups.jpg" alt="PGUPS" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>PGUPS</h3>
           <p class="uni__meta">Sankt-Peterburg · 1809-yil</p>
@@ -238,7 +256,7 @@
         </div>
       </article>
       <article class="uni" data-tags="turizm" data-city="msk">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/rgutis.jpg" alt="RGUTIS" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>RGUTIS</h3>
           <p class="uni__meta">Moskva</p>
@@ -247,7 +265,7 @@
         </div>
       </article>
       <article class="uni" data-tags="kimyo muhandislik" data-city="spb">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/spbgti.jpg" alt="SPbGTI" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>SPbGTI</h3>
           <p class="uni__meta">Sankt-Peterburg</p>
@@ -256,7 +274,7 @@
         </div>
       </article>
       <article class="uni" data-tags="dizayn" data-city="spb">
-        <div class="uni__img ph"><span class="ph-label">Foto</span></div>
+        <img class="uni__img" src="img/unis/spbguptd.jpg" alt="SPbGUPTD" loading="lazy" width="800" height="600">
         <div class="uni__body">
           <h3>SPbGUPTD</h3>
           <p class="uni__meta">Sankt-Peterburg</p>
