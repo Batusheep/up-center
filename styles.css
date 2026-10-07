@@ -116,7 +116,8 @@ p { margin: 0 0 16px; }
 .dropdown--wide { flex-direction: row; flex-wrap: wrap; width: 520px; padding: 16px; }
 .dropdown__col { flex: 1; display: flex; flex-direction: column; }
 .dropdown__title { margin: 0 12px 6px; font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.dropdown__all { width: 100%; margin-top: 8px; border-top: 1px solid var(--line); border-radius: 0 !important; padding-top: 14px !important; color: var(--accent); font-weight: 700; }
+.dropdown__all { position: relative; width: 100%; margin-top: 17px; color: var(--accent); font-weight: 700; }
+.dropdown__all::before { content: ""; position: absolute; left: 0; right: 0; top: -9px; border-top: 1px solid var(--line); }
 
 .header__actions { margin-left: auto; display: flex; align-items: center; gap: 12px; }
 .header__phone { font-weight: 700; font-size: 15px; white-space: nowrap; }
@@ -171,7 +172,7 @@ p { margin: 0 0 16px; }
   background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 0 0 12px rgba(255,255,255,.6);
 }
-.video__play svg { width: 34px; height: 34px; fill: currentColor; margin-left: 4px; }
+.video__play svg { width: 34px; height: 34px; fill: currentColor; transform: translateX(14%); }
 .video__play--sm { width: 56px; height: 56px; box-shadow: 0 0 0 8px rgba(255,255,255,.6); }
 .video__play--sm svg { width: 22px; height: 22px; }
 .video__time { position: absolute; right: 20px; bottom: 20px; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
