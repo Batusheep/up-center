@@ -172,7 +172,7 @@ p { margin: 0 0 16px; }
   background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 0 0 12px rgba(255,255,255,.6);
 }
-.video__play svg { width: 34px; height: 34px; fill: currentColor; transform: translateX(14%); }
+.video__play svg { width: 34px; height: 34px; fill: currentColor; }
 .video__play--sm { width: 56px; height: 56px; box-shadow: 0 0 0 8px rgba(255,255,255,.6); }
 .video__play--sm svg { width: 22px; height: 22px; }
 .video__time { position: absolute; right: 20px; bottom: 20px; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
